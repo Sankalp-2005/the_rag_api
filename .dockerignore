@@ -1,0 +1,37 @@
+# Version control
+.git
+.gitignore
+
+# Virtual environment (rebuilt inside the container)
+.venv
+
+# Environment secrets (injected via Cloud Run env vars, not baked into the image)
+.env
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+build/
+dist/
+wheels/
+*.egg-info
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Documentation (not needed at runtime)
+README.md
